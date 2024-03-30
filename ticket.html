@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Park Tickets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        } */
+
+        /* section {
+            padding: 2em;
+        } */
+        .h1{
+            text-align: center;
+
+        }
+        .ticket-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 1em;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .ticket-price {
+            font-size: 1.2em;
+            color: #27ae60;
+        }
+
+        @media (min-width: 600px) {
+            .ticket-card {
+                width: 45%;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="" class="brand">Sanjalika Water Park </a>
+        <div class="navigation">
+            <div class="navigation-items">
+              <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About US</a>
+                <a href="contact.html">Contact US</a>
+                <div class="dropdown">
+                <button class="dropbtn"><a>Park Info</a></button>
+                  <div class="dropdown-content">
+                    <a href="booking.html">Booking</a>
+                    <a href="ticket.html">Ticket</a>
+                    <a href="food-zone.html">Food Zone</a>
+                  </div>
+                </div>
+                  <nav class="navbar">
+                  <div class="dropdown">
+                    <button class="dropbtn"><a>Our Facilities</a></button>
+                    <div class="dropdown-content">
+                      <a href="slides.html">Water sildes</a>
+                      <a href="ladies-pool-area.html">Ladies pool area </a>
+                      <a href="horse.html">Horse riding</a>
+                      <a href="pool.html">Artificial sea</a>
+                      <a href="tennis.html">Tenis Court</a>
+                      <a href="cricket.html"> Cricket ground</a>
+                    </div>
+                  </div>
+                </nav>
+                </nav>
+                
+            </div>
+          
+        </div>
+    </header>
+
+     
+        
+    
+
+    <section>
+
+
+        <h1 class="h1"> Tickets</h1>
+
+        <div class="ticket-card">
+            <h2>Kids Tickets</h2>
+            <p class="ticket-price">Rs1000</p>
+            <button onclick="buyTicket('Kids Tickets', 1000)">Buy Now</button>
+        </div>
+
+        <div class="ticket-card">
+            <h2>Standard Ticket</h2>
+            <p class="ticket-price">Rs2000</p>
+            <button onclick="buyTicket('Standard Ticket', 2000)">Buy Now</button>
+        </div>
+
+        <div class="ticket-card">
+            <h2>Special Ticket</h2>
+            <p class="ticket-price">Rs1500</p>
+            <button onclick="buyTicket('Special Ticket', 2000)">Buy Now</button>
+        </div>
+
+        <div class="ticket-card">
+            <h2>VIP Ticket</h2>
+            <p class="ticket-price">Rs5000</p>
+            <button onclick="buyTicket('VIP Ticket', 5000)">Buy Now</button>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p> Sanjalika Water Park is a family Resort in Karachi that provides attractions for all ages and offer guests with amenities of their choice including loads of family entertainment, artificial beach access, water recreation, dining, golf and lots more</p>
+          </div>
+          <div class="footer-section links">
+            <h2>
+              Sanjalika Water Park
+            </h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="park-info.html">Park-info</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact-form">
+            <h2>Email Us</h2>
+            <form action="#">
+              <input type="email" name="email" placeholder="Your Email">
+              <textarea name="message" placeholder="Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 Sanjalika Water Park.com
+        </div>
+      </footer>
+      
+
+    <script>
+        function buyTicket(ticketType, price) {
+            alert(`Thank you for purchasing a ${ticketType} for ${price}. Enjoy your time at the water park!`);
+        }
+    </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
